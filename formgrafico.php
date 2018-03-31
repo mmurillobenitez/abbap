@@ -9,7 +9,7 @@ session_start();
     <body>
 <h1> Inserisci l'id del sensore che desider esaminare  </h1><br>
 <?php
-echo " <br>";
+
 include'tempALLMS.php';
 ?>
 <form action="creaDatiGraficoP1.php" method="post">
