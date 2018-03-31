@@ -6,17 +6,13 @@ session_start();
 <body>
     
      <?php
-$servername = "mysql.hostinger.it";
-$username = "u426573260_luis";
-$password = "cinegga00";
-$dbname = "u426573260_primo";
+
 
 $idR= $_POST['idR'];
 $valoreR= $_POST["valoreR"];
 
+$conn = new PDO("mysql:host="mysql.hostinger.it";dbname="u426573260_primo", "u426573260_luis", "cinegga00");
 
-
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $sql = "DELETE FROM rilevazione WHERE codice_S = '$idR' and valore = '$valoreR' ";
@@ -29,7 +25,7 @@ $valoreR= $_POST["valoreR"];
     
  
 
-$conn = null;
+
 ?> 
 <br>
 <br>
