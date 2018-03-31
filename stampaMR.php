@@ -5,14 +5,11 @@ session_start();
 
  <?php
      
-$servername = "mysql.hostinger.it";
-$username = "u426573260_luis";
-$password = "cinegga00";
-$dbname = "u426573260_primo";
+
 
 $codU = $_SESSION['id'] ;
 
-$cn = mysqli_connect($servername, $username, $password, $dbname);
+$cn = mysqli_connect("mysql.hostinger.it", "u426573260_luis", "cinegga00", "u426573260_primo");
 $sql = " SELECT tipo , id ,  primaP, secondaP, terzaP, valore, descrizione
         FROM  dispositivo  inner join tipo on tipo = tipologia inner join rilevazione on id = codice_S
         WHERE proprieta = '$codU' ";
