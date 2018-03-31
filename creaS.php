@@ -34,7 +34,7 @@ $rell = $_SESSION['id'];
     
 
 
-$conn = null;
+
 ?> 
 
 
