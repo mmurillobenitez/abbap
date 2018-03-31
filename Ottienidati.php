@@ -5,15 +5,12 @@ session_start();
 
 <?php
      
-$servername = "mysql.hostinger.it";
-$username = "u426573260_luis";
-$password = "cinegga00";
-$dbname = "u426573260_primo";
+
 $codiceD = $_POST["code"];
 $codU = $_SESSION['id'] ;
 
 
-$cn = mysqli_connect($servername, $username, $password, $dbname);
+$cn = mysqli_connect("mysql.hostinger.it", "u426573260_luis", "cinegga00", "u426573260_primo");
 $sql = "SELECT *  FROM Utente where datiCode = '$codiceD' ";
 $ris = mysqli_query($cn,$sql) ; //esegue la query
 $n_ris = mysqli_num_rows($ris); //dice il numero di record trovati
