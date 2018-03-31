@@ -12,10 +12,7 @@ session_start();
  
  <?php
      
-$servername = "mysql.hostinger.it";
-$username = "u426573260_luis";
-$password = "cinegga00";
-$dbname = "u426573260_primo";
+
 
 
 $id =  $_POST["ide"];
@@ -24,7 +21,7 @@ $descrizione =  $_POST["descri"];
 $rell = $_SESSION['id'];
  
 
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $conn = new PDO("mysql:host="mysql.hostinger.it";dbname="u426573260_primo", "u426573260_luis", "cinegga00");
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $sql = "INSERT INTO sensori  VALUES('$id','$dato','$descrizione', '$rell')";
