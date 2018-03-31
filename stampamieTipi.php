@@ -5,14 +5,11 @@ session_start();
 
  <?php
      
-$servername = "mysql.hostinger.it";
-$username = "u426573260_luis";
-$password = "cinegga00";
-$dbname = "u426573260_primo";
+
 
 $codU = $_SESSION['id'] ;
 
-try {
+
 $cn = mysqli_connect($servername, $username, $password, $dbname);
 $sql = " SELECT  id , primaP, secondaP, terzaP, tipologia
         FROM  dispositivo  inner join tipo on tipo = tipologia 
@@ -47,11 +44,7 @@ if ($n_ris > 0){
    
    
    
-    }
-catch(PDOException $e)
-    {
-    echo $sql . "<br>" . $e->getMessage();
-    }
+   
 
 $cn = null;
 
