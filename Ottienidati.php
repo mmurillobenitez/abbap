@@ -12,7 +12,7 @@ $dbname = "u426573260_primo";
 $codiceD = $_POST["code"];
 $codU = $_SESSION['id'] ;
 
-try {
+
 $cn = mysqli_connect($servername, $username, $password, $dbname);
 $sql = "SELECT *  FROM Utente where datiCode = '$codiceD' ";
 $ris = mysqli_query($cn,$sql) ; //esegue la query
@@ -46,11 +46,7 @@ if ($n_ris> 0){
    
    
    
-    }
-catch(PDOException $e)
-    {
-    echo $sql . "<br>" . $e->getMessage();
-    }
+
 
 $cn = null;
 
