@@ -42,7 +42,7 @@ if ($n_ris> 0){
    
  
 
-$cn = null;
+
 
 ?> 
 </body>
