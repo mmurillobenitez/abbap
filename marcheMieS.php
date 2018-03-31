@@ -7,15 +7,12 @@ session_start();
 <body>
      <?php
      
-$servername = "mysql.hostinger.it";
-$username = "u426573260_luis";
-$password = "cinegga00";
-$dbname = "u426573260_primo";
+
 
 $codU = $_SESSION['id'] ;
 
-try {
-$cn = mysqli_connect($servername, $username, $password, $dbname);
+
+$cn = mysqli_connect("mysql.hostinger.it", "u426573260_luis", "cinegga00", "u426573260_primo");
 $sql = " SELECT   marca.id , marca.nome , marca.dataP
         FROM ( dispositivo inner join marca on dispositivo.marca = marca.id) 
         WHERE  proprieta = '$codU'";
@@ -48,11 +45,7 @@ if ($n_ris> 0){
    
    
    
-    }
-catch(PDOException $e)
-    {
-    echo $sql . "<br>" . $e->getMessage();
-    }
+    
 
 $cn = null;
 
