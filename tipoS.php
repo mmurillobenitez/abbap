@@ -39,15 +39,11 @@ if ($n_ris > 0){
     while ($row = $ris->fetch_assoc()) {
     // output data of each row
     
-    echo "-Tipologia sensore  : ".$row['tipologia']." ";
-     echo "   Tipo valore stringa    - :  ".$row['primaP']." -  ".$row['secondaP']." - ".$row['terzaP']."<br>";
+    echo "-Tipologia sensore  : ".$row['tipologia']." Tipo valore stringa    - :  ".$row['primaP']." -  ".$row['secondaP']." - ".$row['terzaP']."<br> ";
+     echo "   ";
     }
     
- }else {
-     echo" Questo utente non rilevazioni ";
-	 
-}
- 
+ }
 
    
    
@@ -55,6 +51,6 @@ if ($n_ris > 0){
     
 
 
-$cn = null;
+
 
 ?> 
