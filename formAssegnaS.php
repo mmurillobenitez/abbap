@@ -39,10 +39,7 @@ if ($n_ris> 0){
        
     }
     
- }else {
-     echo" Questo utente non ha  sensori ";
-	 
-}
+ }
  
 
    
@@ -51,7 +48,6 @@ if ($n_ris> 0){
     
 
 
-$cn = null;
  ?>
 <h3>Dati sensore  </h3><br>
 Id Sensore da assegnare  : <input type="text" name="ide"><br>
@@ -62,10 +58,9 @@ Id Sensore da assegnare  : <input type="text" name="ide"><br>
 
 
 
-$cn = mysqli_connect("mysql.hostinger.it", "u426573260_luis", "cinegga00", "u426573260_primo");
-   
-$sql = "SELECT *  FROM dispositivo   ";
-$ris = mysqli_query($cn,$sql) ; //esegue la query
+$cnx = mysqli_connect("mysql.hostinger.it", "u426573260_luis", "cinegga00", "u426573260_primo"); 
+$sqlx = "SELECT *  FROM dispositivo   ";
+$ris = mysqli_query($cnx,$sqlx) ; //esegue la query
 $n_ris = mysqli_num_rows($ris); //dice il numero di record trovati
 
 
@@ -83,9 +78,6 @@ if ($n_ris> 0){
     
 
     
-}else {
-     echo" Non ci sono sensori non assegnati ";
-	 
 }
  
 
