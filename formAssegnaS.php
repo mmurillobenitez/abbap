@@ -37,9 +37,20 @@ if ($n_ris> 0){
     
        
        
-    }
+    }else {
+     echo" Non ci sono sensori non assegnati ";
+	 
+}
+ 
+
+   
+   
+   
     
- }
+
+$cn = null;
+    
+ 
  
 
    
@@ -78,8 +89,18 @@ if ($n_ris> 0){
     
 
     
+}else {
+     echo" Non ci sono sensori non assegnati ";
+	 
 }
  
+
+   
+   
+   
+    
+
+$cn = null;
 
    
    
