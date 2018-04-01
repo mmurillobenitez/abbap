@@ -123,7 +123,7 @@ if ($n_ris> 0){
     }
     
  }else {
-     echo" Questo utente non ha  sensori ";
+   
 	 
 }
  
