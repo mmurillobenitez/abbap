@@ -6,7 +6,7 @@ session_start();
 <?php
      
 
-$codiceD = $_POST["code"];
+$codiceD = $_POST['code'];
 $codU = $_SESSION['id'] ;
 
 
@@ -34,9 +34,17 @@ if ($n_ris> 0){
     }
     
  }else {
-     echo"Codice dati errato ";
+     echo"<p>Codice dati errato</p> ";
 	 include 'index.html';
 }
+ 
+
+   
+   
+   
+    
+
+$cn = null;
 
  
 
