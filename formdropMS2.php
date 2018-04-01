@@ -116,13 +116,22 @@ if ($n_ris> 0){
     {
     // output data of each row
     
-     echo "-Id: ".$row['id']." - Tipo : ".$row["tipo"]." -Marca  ".$row['marca']." - Zona ".$row['zona ']."  Codice Utente  ".$row['proprieta']." <br>";
+     echo "<p>-Id: ".$row['id']." - Tipo : ".$row["tipo"]." -Marca  ".$row['marca']." - Zona ".$row['zona ']."  Codice Utente  </p>".$row['proprieta']." <br>";
     
        
        
-    }
+    }else {
+     echo" Non ci sono sensori  assegnati ";
+	 
+}
+ 
+
+   
+   
+   
     
- }
+
+$cn = null;
  
 
    
