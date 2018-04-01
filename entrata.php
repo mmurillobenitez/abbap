@@ -34,7 +34,7 @@ if ($n_ris> 0){
     }
     
  }else {
-     echo" Password o nome Utente Errati ";
+    
 	 include 'index.html';
 }
 
