@@ -39,11 +39,22 @@ if ($n_ris > 0){
     while ($row = $ris->fetch_assoc()) {
     // output data of each row
     
-    echo "-Tipologia sensore  : ".$row['tipologia']." Tipo valore stringa    - :  ".$row['primaP']." -  ".$row['secondaP']." - ".$row['terzaP']."<br> ";
+    echo " <p>Tipologia sensore  : ".$row['tipologia']." Tipo valore stringa     :  ".$row['primaP']."  - ".$row['secondaP']." - ".$row['terzaP']."<br> </p>";
      echo "   ";
     }
     
- }
+ }else {
+     echo" Non ci sono tipi ";
+	 
+}
+ 
+
+   
+   
+   
+    
+
+$cn = null;
 
    
    
