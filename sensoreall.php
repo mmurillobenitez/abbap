@@ -34,13 +34,24 @@ if ($n_ris> 0){
     while ($row = $ris->fetch_assoc()) {
     // output data of each row
     echo " Sensore: <br>";
-     echo "-Id: ".$row['id']." - Tipo : ".$row["tipo"]." -Marca  ".$row['marca']." - Zona ".$row['zona ']."  Codice Utente  ".$row['proprieta']." <br>";
+     echo "Id: ".$row['id']." - Tipo : ".$row["tipo"]." Marca  ".$row['marca']."  Zona ".$row['zona ']."  Codice Utente  ".$row['proprieta']." <br>";
     
        
        
     }
     
- }
+ }else {
+     echo" Non ci sono sensori ";
+	 
+}
+ 
+
+   
+   
+   
+    
+
+$cn = null;
  
 
    
