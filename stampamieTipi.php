@@ -31,12 +31,19 @@ if ($n_ris > 0){
     while ($row = $ris->fetch_assoc()) {
     // output data of each row
     
-    echo "-Id sensore : ".$row['id']." di tipo : ".$row['tipologia']."";
-     echo "   Tipo valore stringa    - :  ".$row['primaP']." -  ".$row['secondaP']." - ".$row['terzaP']."<br>";
-    }
-    
- }
+    echo "-Id sensore : ".$row['id']." di tipo : ".$row['tipologia']."  Tipo valore stringa    - :  ".$row['primaP']." -  ".$row['secondaP']." - ".$row['terzaP']."<br>";
+    }else {
+     echo" Non ci sono sensori non assegnati ";
+	 
+}
  
+
+   
+   
+   
+    
+
+$cn = null;
 
    
    
