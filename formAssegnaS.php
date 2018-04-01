@@ -32,8 +32,8 @@ if ($n_ris> 0){
     while ($row = $ris->fetch_assoc()) {
     // output data of each row
    
- echo "-Id: ".$row['id']." - Nome : ".$row["nome"]." -e_mail  ".$row['email']." - Livello ".$row['livello']."
- -Codice dati ".$row["datiCode"]." <br>";
+ echo "<p>-Id: ".$row['id']." - Nome : ".$row["nome"]." -e_mail  ".$row['email']." - Livello ".$row['livello']."
+ -Codice dati ".$row["datiCode"]." </p>";
     
        
        
@@ -75,8 +75,7 @@ $n_ris = mysqli_num_rows($ris); //dice il numero di record trovati
 if ($n_ris> 0){
     while ($row = $ris->fetch_assoc()) {
     // output data of each row
-    echo " Lista sensori assegnabili: <br>";
-     echo "-Id: ".$row['id']." - Tipo : ".$row["tipo"]." -Marca  ".$row['marca']." - Codice Utente  ".$row['proprieta']." <br>";
+    echo " <p>Lista sensori assegnabili:  -Id: ".$row['id']." - Tipo : ".$row["tipo"]." -Marca  ".$row['marca']." - Codice Utente  ".$row['proprieta']." </p>";
     
        
        
@@ -95,7 +94,7 @@ if ($n_ris> 0){
    
     
 
-$cn = null;
+
 
 ?> 
 
@@ -116,7 +115,7 @@ $cn = null;
    
     
 
-$cn = null;
+
 
 ?> 
 
