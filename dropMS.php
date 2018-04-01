@@ -6,10 +6,6 @@ session_start();
 <body>
     
      <?php
-$servername = "mysql.hostinger.it";
-$username = "u426573260_luis";
-$password = "cinegga00";
-$dbname = "u426573260_primo";
 
 $id= $_POST['id'];
 
@@ -29,7 +25,7 @@ $id= $_POST['id'];
     
 
 
-$conn = null;
+
 include'homeU.php';
 ?> 
 <br>
