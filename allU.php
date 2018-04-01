@@ -1,9 +1,9 @@
 <?php
 // Start the session
 session_start();
-?>
 
-<?php 
+
+
 if ($_SESSION['livello']>1 ){
         include 'dentroUser2.php';
        
@@ -40,10 +40,7 @@ if ($n_ris> 0){
        
     }
     
- }else {
-     echo" Questo utente non ha  sensori ";
-	 
-}
+ }
  
 
    
