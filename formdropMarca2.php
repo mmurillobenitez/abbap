@@ -130,10 +130,7 @@ if ($n_ris> 0){
        
     }
     
- }else {
-     echo" Questo utente non ha  sensori ";
-	 
-}
+ }
  
 
    
@@ -142,7 +139,7 @@ if ($n_ris> 0){
     
 
 
-$cn = null;
+
 
 ?> 
 <br>
