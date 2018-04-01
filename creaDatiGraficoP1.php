@@ -10,16 +10,14 @@ session_start();
     <div align=\"right\">
  <?php
      
-$servername = "mysql.hostinger.it";
-$username = "u426573260_luis";
-$password = "cinegga00";
-$dbname = "u426573260_primo";
+
 $codU = $_SESSION['id'] ;
 $n = 0;
 $id = $_POST["id"]; 
 
 
-$cn = mysqli_connect($servername, $username, $password, $dbname);
+$cn = mysqli_connect("mysql.hostinger.it", "u426573260_luis", "cinegga00", "u426573260_primo");
+
 $sql = " SELECT *
         FROM  rilevazione inner join dispositivo on codice_S = id
         where proprieta = '$codU' and id ='$id' order by descrizione ";
@@ -77,7 +75,7 @@ if ($n_ris > 0){
     
     include 'creaGrafico.php';
     include 'HomeU.php';
-$cn = null;
+
 
 ?>
 
