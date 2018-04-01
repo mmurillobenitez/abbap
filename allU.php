@@ -31,19 +31,19 @@ $n_ris = mysqli_num_rows($ris); //dice il numero di record trovati
 
    
 if ($n_ris> 0){
-     echo " Lista Utenti : <br>";
+     echo " <p>Lista Utenti : </p>";
     while ($row = $ris->fetch_assoc()) {
     // output data of each row
    
- echo "-Id: ".$row['id']." - Nome : ".$row["nome"]." -e_mail  ".$row['email']." - Livello ".$row['livello']."
- -Codice dati ".$row["datiCode"]." <br>";
+ echo "<p>-Id: ".$row['id']." - Nome : ".$row["nome"]." -e_mail  ".$row['email']." - Livello ".$row['livello']."
+ -Codice dati ".$row["datiCode"]." </p>";
     
        
        
     }
     
  }else {
-     echo" Non ci sono sensori non assegnati ";
+     echo" <p>Non ci sono sensori non assegnati </p>";
 	 
 }
  
