@@ -43,11 +43,7 @@ if ($n_ris > 0){
      
     }
     
- }else {
-     echo" Questo utente non rilevazioni ";
-	 
-}
- 
+ }
 
    
    
@@ -55,7 +51,6 @@ if ($n_ris > 0){
     
 
 
-$cn = null;
 
 
 
