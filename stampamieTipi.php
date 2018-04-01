@@ -35,10 +35,7 @@ if ($n_ris > 0){
      echo "   Tipo valore stringa    - :  ".$row['primaP']." -  ".$row['secondaP']." - ".$row['terzaP']."<br>";
     }
     
- }else {
-     echo" Questo utente non rrrrrrrrilevazioni ";
-	 
-}
+ }
  
 
    
@@ -46,6 +43,6 @@ if ($n_ris > 0){
    
    
 
-$cn = null;
+
 
 ?> 
