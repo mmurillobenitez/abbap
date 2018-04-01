@@ -1,7 +1,9 @@
 <?php
 // Start the session
 session_start();
+?>
 
+<?php
 
 
 if ($_SESSION['livello']>1 ){
@@ -40,7 +42,18 @@ if ($n_ris> 0){
        
     }
     
- }
+ }else {
+     echo" Non ci sono sensori non assegnati ";
+	 
+}
+ 
+
+   
+   
+   
+    
+
+$cn = null;
  
 
    
