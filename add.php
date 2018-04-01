@@ -6,16 +6,13 @@ session_start();
 <body>
     
      <?php
-$servername = "mysql.hostinger.it";
-$username = "u426573260_luis";
-$password = "cinegga00";
-$dbname = "u426573260_primo";
+
 $name =  $_POST["name"];
 $ps=  $_POST["pass"];
 $email= $_POST["email"];
 
+$conn = new PDO("mysql:host="mysql.hostinger.it";dbname="u426573260_primo", "u426573260_luis", "cinegga00");
 
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $sql = "INSERT INTO Utente(   nome, password, email)  VALUES('$name','$ps','$email')";
@@ -27,7 +24,7 @@ $email= $_POST["email"];
     }
 
 
-$conn = null;
+
 ?> 
 <br>
 <br>
