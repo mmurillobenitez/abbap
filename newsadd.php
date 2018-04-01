@@ -33,7 +33,7 @@ $conn = new PDO("mysql:host="mysql.hostinger.it";dbname="u426573260_primo", "u42
     
   
 
-$conn = null;
+
 ?> 
 
 
