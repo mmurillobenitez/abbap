@@ -10,7 +10,8 @@ session_start();
 $codU = $_SESSION['id'] ;
 
 
-$cn = mysqli_connect($servername, $username, $password, $dbname);
+$cn = mysqli_connect("mysql.hostinger.it", "u426573260_luis", "cinegga00", "u426573260_primo");
+
 $sql = " SELECT  id , primaP, secondaP, terzaP
         FROM  dispositivo  inner join tipo on tipo = tipologia 
         WHERE proprieta = '$codU' ";
@@ -35,10 +36,7 @@ if ($n_ris > 0){
      echo "   Tipo valore stringa    - :  ".$row['primaP']." -  ".$row['secondaP']." - ".$row['terzaP']."<br>";
     }
     
- }else {
-     echo" Questo utente non rrrrrrrrilevazioni ";
-	 
-}
+ }
  
 
    
@@ -46,6 +44,6 @@ if ($n_ris > 0){
    
    
 
-$cn = null;
+
 
 ?> 
