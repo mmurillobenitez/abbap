@@ -38,14 +38,14 @@ if ($n_ris> 0){
     // output data of each row
    
  echo "<p>-Id: ".$row['id']." - Nome : ".$row["nome"]." -e_mail  ".$row['email']." - Livello ".$row['livello']."
- -Codice dati ".$row["datiCode"]." </p>";
+ -Codice dati ".$row["datiCode"]."</p>";
     
        
        
     }
     
  }else {
-     echo" <p>Non ci sono sensori non assegnati </p>";
+     echo" <p>Non ci sono sensori non assegnati</p>";
 	 
 }
 
