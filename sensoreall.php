@@ -3,7 +3,7 @@
 session_start();
 ?>
 <!DOCTYPE html>
-<!DOCTYPE html>
+
 <html>
 <title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -42,7 +42,7 @@ if ($n_ris> 0){
     }
     
  }else {
-     echo" Questo utente non ha  sensori ";
+     
 	 
 }
  
