@@ -1,8 +1,10 @@
-<?php
-// Start the session
-session_start();
-?>
 
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<TITLE>SENSORI</TITLE>
+</HEAD>
+    <body>
 <?php
 
 
@@ -46,21 +48,12 @@ if ($n_ris> 0){
      echo" <p>Non ci sono sensori non assegnati </p>";
 	 
 }
- 
-
-   
-   
-   
-    
 
 $cn = null;
- 
+ ?> 
+</body>
 
-   
-   
-   
-    
+</HTML>
 
-
-
-?> 
+	    
+	    
