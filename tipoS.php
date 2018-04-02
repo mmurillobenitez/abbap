@@ -20,7 +20,7 @@ $codU = $_SESSION['id'] ;
 
 
 $cn = mysqli_connect('mysql.hostinger.it', 'u426573260_luis', 'cinegga00', 'u426573260_primo');
-$sql = " SELECT  tipologia , primaP, secondaP, terzaP FROM  tipo ";
+$sql = 'SELECT  tipologia , primaP, secondaP, terzaP FROM  tipo ';
         
      
         
@@ -33,12 +33,12 @@ $n_ris = mysqli_num_rows($ris); //dice il numero di record trovati
 
    
 if ($n_ris > 0){
-    echo " Lista tipi dei   sensori  <br>";
+    echo "Lista tipi dei   sensori  <br>";
    
     while ($row = $ris->fetch_assoc()) {
     // output data of each row
     
-    echo " <p>Tipologia sensore  ".$row['tipologia']." Tipo valore stringa       ".$row['primaP']."   ".$row['secondaP']."  ".$row['terzaP']." </p>";
+    echo "Tipologia sensore  ".$row['tipologia']." Tipo valore stringa       ".$row['primaP']."   ".$row['secondaP']."  ".$row['terzaP']." <br>";
      
     }
     
