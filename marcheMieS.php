@@ -12,7 +12,7 @@ session_start();
 $codU = $_SESSION['id'] ;
 
 
-$cn = mysqli_connect("mysql.hostinger.it", "u426573260_luis", "cinegga00", "u426573260_primo");
+$cn = mysqli_connect('mysql.hostinger.it', 'u426573260_luis', 'cinegga00', 'u426573260_primo');
 $sql = " SELECT   marca.id , marca.nome , marca.dataP
         FROM ( dispositivo inner join marca on dispositivo.marca = marca.id) 
         WHERE  proprieta = '$codU'";
@@ -26,11 +26,11 @@ include 'homeU.php';
 
    
 if ($n_ris> 0){
-     echo " Lista marche dei miei dispositivi  : <br>";
+     echo " Lista marche dei miei dispositivi   <br>";
     while ($row = $ris->fetch_assoc()) {
     // output data of each row
    
-   echo " <p> Id Marca  ".$row['id']."    Nome ".$row["nome"]." Data creazione  ".$row['dataP']." </p>";
+   echo " <p> Id Marca  ".$row['id']."    Nome ".$row['nome']." Data creazione  ".$row['dataP']." </p>";
     
         
        
