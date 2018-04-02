@@ -120,7 +120,7 @@ if ($n_ris> 0){
     while ($row = $ris->fetch_assoc()) {
     // output data of each row
     
-     echo "<p> Id: ".$row['id']." - Tipo : ".$row["tipo"]." -Marca  ".$row['marca']." - Zona ".$row['zona ']."  Codice Utente  ".$row['proprieta']." </p>";
+     echo "<p> Id: ".$row['id']."  Tipo  ".$row["tipo"]." Marca  ".$row['marca']."  Zona ".$row['zona ']."  Codice Utente  ".$row['proprieta']." </p>";
     
        
        
