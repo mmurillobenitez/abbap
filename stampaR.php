@@ -39,7 +39,7 @@ if ($n_ris > 0){
     while ($row = $ris->fetch_assoc()) {
     // output data of each row
     
-    echo "Id sensore : ".$row['codice_S']."  Valore ".$row['valore']."  Descrizione ".$row['descrizione']."<br>";
+    echo "Id sensore  ".$row['codice_S']."  Valore ".$row['valore']."  Descrizione ".$row['descrizione']."<br>";
      
     }
     
