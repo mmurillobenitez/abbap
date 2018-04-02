@@ -2,13 +2,6 @@
 // Start the session
 session_start();
 ?>
-<!DOCTYPE html>
-
-<html>
-<title>W3.CSS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<body>
    
 <?php
      include 'homeU.php';
@@ -66,6 +59,4 @@ $cn = null;
 
 
 
-</div>
-</body>
-</html>
+
