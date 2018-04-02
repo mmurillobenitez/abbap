@@ -22,6 +22,7 @@ session_start();
 <script  >
 var date = [];
 var valore= [];
+var lenght= [];
 
 
 var  dates = <?php echo json_encode($_date); ?>;
