@@ -38,7 +38,7 @@ if ($n_ris> 0){
     // output data of each row
    
  echo " Id ".$row['id']."  Nome : ".$row['nome']." email  ".$row['email']."  Livello ".$row['livello']."
-  Codice dati ".$row['datiCode']." <br>";
+  Codice dati ".$row['datiCode']." <br />";
     
        
        
