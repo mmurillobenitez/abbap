@@ -34,7 +34,7 @@ if ($n_ris> 0){
     }
     
  }else {
-     echo" Codice dati errato <br> ";
+     echo" Codice dati errato ";
 	 include 'index.html';
 }
  
