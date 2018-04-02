@@ -25,9 +25,9 @@ var valore= [];
 var lenght= [];
 
 
-var  dates = <?php echo json_encode($_date); ?>;
-var  valores= <?php echo json_encode($_valore); ?>;
-var lenght = <?php echo count($_date);; ?>;
+ dates = <?php echo json_encode($_date); ?>;
+ valores= <?php echo json_encode($_valore); ?>;
+lenght = <?php echo count($_date);; ?>;
 lenght = lenght +1; 
 
 for (  i = 1 ; i <  lenght ; i++){
