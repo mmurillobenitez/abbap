@@ -32,12 +32,12 @@ $n_ris = mysqli_num_rows($ris); //dice il numero di record trovati
 
    
 if ($n_ris > 0){
-    echo " Lista rilevazione sensori  <br>";
+    echo " Lista rilevazione sensori  ";
     
     while ($row = $ris->fetch_assoc()) {
     // output data of each row
     
-    echo "Id sensore  ".$row['codice_S']."  Valore ".$row['valore']."  Descrizione ".$row['descrizione']."<br>";
+    echo "Id sensore  ".$row['codice_S']."  Valore ".$row['valore']."  Descrizione ".$row['descrizione']." ";
      
     }
     
