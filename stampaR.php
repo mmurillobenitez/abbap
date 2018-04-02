@@ -18,10 +18,8 @@ session_start();
 
 $codU = $_SESSION['id'] ;
 
-
-$cn = mysqli_connect("mysql.hostinger.it", "u426573260_luis", "cinegga00", "u426573260_primo");
-$sql = " SELECT codice_S , valore, descrizione
-        FROM  rilevazione";
+$cn = mysqli_connect('mysql.hostinger.it', 'u426573260_luis', 'cinegga00', 'u426573260_primo');
+$sql = 'SELECT codice_S , valore, descrizione FROM  rilevazione';
         
      
         
@@ -34,7 +32,7 @@ $n_ris = mysqli_num_rows($ris); //dice il numero di record trovati
 
    
 if ($n_ris > 0){
-    echo " Lista rilevazione sensori : <br>";
+    echo " Lista rilevazione sensori  <br>";
     
     while ($row = $ris->fetch_assoc()) {
     // output data of each row
