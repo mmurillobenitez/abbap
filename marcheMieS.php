@@ -30,7 +30,7 @@ if ($n_ris> 0){
     while ($row = $ris->fetch_assoc()) {
     // output data of each row
    
-   echo " Id Marca  ".$row['id']."    Nome ".$row['nome']." Data creazione  ".$row['dataP']." <br>";
+   echo " Id Marca  ".$row['id']."    Nome ".$row['nome']." Data creazione  ".$row['dataP']." ";
     
         
        
