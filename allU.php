@@ -33,12 +33,12 @@ $n_ris = mysqli_num_rows($ris); //dice il numero di record trovati
 
    
 if ($n_ris> 0){
-     echo " <p>Lista Utenti : </p>";
+     echo " <p>Lista Utenti </p>";
     while ($row = $ris->fetch_assoc()) {
     // output data of each row
    
- echo "<p>-Id: ".$row['id']." - Nome : ".$row["nome"]." -e_mail  ".$row['email']." - Livello ".$row['livello']."
- -Codice dati ".$row["datiCode"]."</p>";
+ echo " Id ".$row['id']."  Nome : ".$row["nome"]." email  ".$row['email']."  Livello ".$row['livello']."
+  Codice dati ".$row["datiCode"]." ";
     
        
        
