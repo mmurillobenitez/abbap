@@ -26,11 +26,11 @@ include 'homeU.php';
 
    
 if ($n_ris> 0){
-     echo " Lista marche dei miei dispositivi   <br>";
+     echo " Lista marche dei miei dispositivi   ";
     while ($row = $ris->fetch_assoc()) {
     // output data of each row
    
-   echo " Id Marca  ".$row['id']."   , Nome ".$row['nome']." ,Data creazione  ".$row['dataP']." <br>";
+   echo " Id Marca  ".$row['id']."   , Nome ".$row['nome']." ,Data creazione  ".$row['dataP']." ";
     
         
        
